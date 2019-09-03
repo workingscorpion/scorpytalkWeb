@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex-basis: 10vh;
+  border-bottom: 1px solid #f9f9f9;
+  display: flex;
+  background-color: #a9bdce;
+  margin: 0;
+  /* background-color: #b2c7d9 */
+}
+
+#friendImage {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  margin: 8px;
+  display: inline;
+}
+
+#friendId {
+  display: inline-block;
+  /* height: 100vh; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+main {
+  background-color: #b2c7d9;
+  width: auto;
+  height: 75vh;
+  margin: 0;
+}
+
+#buttonsubmit {
+  margin-top: 2px;
+  background-color: #ffeb33;
+  border: 1px solid #ffeb33;
+  width: 50px;
+  height: 30px;
+}
+
+#inputtext {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 85%;
+  height: 8vh;
+  border: none;
+}
+
+/* ---------------------------------------------[ */
+
+#chat-contents {
+  border: 1px solid gray;
+  /* height: 850px; */
+  border-bottom: none;
+  /* height: 70vh; */
+  display: block;
+  scroll-behavior: auto;
+}
+/* #chat-input {
+  border: 1px solid gray;
+  height: 40px;
+} */
+
+input {
+  /* border: none; */
+  border: 1px solid gray;
+  height: 25px;
+}
+
+#inputid {
+  border: 1px solid gray;
+  width: 100px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+textarea {
+  width: 98%;
+  height: 98%;
+  border: none;
+  resize: none;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+canvas {
+  display: none;
+}

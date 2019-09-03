@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JoinForm</title>
+    <link rel="stylesheet" href="joinstyle.css" />
+  </head>
+  <body>
+    <form action="/joinresult" method="POST">
+      <span id="titlespan">Welcome to ScorpyTalk</span>
+      <span class="outerspan">
+        ID
+        <span class="innerspan"
+          ><input
+            type="text"
+            name="id"
+            class="inputinfo"
+            id="inputid"
+            placeholder="6자리 이상"
+          />
+          <button id="idcheck">중복 검사</button>
+        </span>
+        <span class="alert" id="alertid">6자리 이상 입력해주세요</span>
+      </span>
+
+      <span class="outerspan">
+        PW
+        <span class="innerspan"
+          ><input
+            type="password"
+            name="pw"
+            class="inputinfo"
+            id="inputpw"
+            placeholder="8자리 이상"
+        /></span>
+        <span class="alert" id="alertpw">8자리 이상 영문자,숫자, 특수문자</span>
+      </span>
+      <span class="outerspan">
+        check
+        <span class="innerspan"
+          ><input
+            type="password"
+            name="pwcheck"
+            class="inputinfo"
+            id="inputcheck"
+            placeholder="비밀번호 확인"
+        /></span>
+        <span class="alert" id="alertcheck">두 개의 비밀번호가 다릅니다</span>
+      </span>
+
+      <span class="outerspan">
+        email
+        <span class="innerspan" style="background-color: #ffeb33;border:none;">
+          <input type="text" name="email" class="inputemail" id="inputemail" />
+          @
+          <select name="selectemail" id="selectemail">
+            <option value="enter">직접 입력</option>
+            <option value="naver.com" selected>naver.com</option>
+            <option value="hanmail.net">hanmail.net</option>
+            <option value="nate.com">nate.com</option>
+            <option value="gmail.com">gmail.com</option>
+          </select>
+          <input
+            type="text"
+            name="domain"
+            id="inputmailaddr"
+            value="naver.com"
+          />
+          <button id="emailbutton">주소 선택</button>
+        </span>
+        <span class="alert" id="alertemail"></span>
+      </span>
+      <span class="outerspan">
+        phone<span class="innerspan" id="phonespan">
+          <select name="phone1" id="selectphone">
+            <option value="010">010</option>
+            <option value="010">011</option>
+            <option value="010">016</option>
+            <option value="010">018</option>
+            <option value="010">019</option>
+          </select>
+          -
+          <input
+            type="tel"
+            name="phone2"
+            class="inputtel"
+            id="inputphone2"
+            maxlength="4"
+          />-
+          <input
+            type="tel"
+            name="phone3"
+            class="inputtel"
+            id="inputphone3"
+            maxlength="4"
+          />
+        </span>
+        <span class="alert" id="alertphone"></span>
+      </span>
+
+      <span class="outerspan" id="lastspan">
+        <input type="submit" value="회원가입" id="submitbtn" />
+        <input type="submit" value="취소" id="canclebtn" />
+      </span>
+    </form>
+
+    <script src="join.js"></script>
+  </body>
+</html>

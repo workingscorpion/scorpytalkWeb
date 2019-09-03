@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fontello-4a737754/css/fontello.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="every">
+      <div class="whole">
+        <!-- <nav class="nav">
+          <button class="buttons" id="button1">
+            <i class="icon-user icon" title="친구"></i>
+          </button>
+          <button class="buttons" id="button2">
+            <i class="icon-comment icon" title="채팅"></i>
+          </button>
+          <button class="buttons" id="button3">
+            <i class="icon-ellipsis icon" title="더보기"></i>
+          </button>
+          <button class="buttons" id="button4">
+            <i class="icon-menu icon" title="메뉴"></i>
+          </button>
+        </nav> -->
+        <div class="center">
+          <header style="margin-top: 20px;">
+            <span id="title"> 친구</span>
+            <button class="icon-user-plus" title="친구 추가"></button>
+            <br />
+            <span class="searchbar">
+              <i class="icon-search"></i>
+              <input type="text" placeholder="이름검색" id="inputsearch" />
+            </span>
+          </header>
+          <main>
+            <div id="myProfil">
+              <img src="images/admin_image.jpg" alt="" id="myImage" />
+              <span id="myId">admin</span>
+            </div>
+            <div id="friendslist">
+              <span id="friendsnumber">내 친구</span>
+              <button class="list">
+                <img src="images/test_image.jpg" alt="" class="friendImage" />
+                <span class="friendId">test</span>
+              </button>
+            </div>
+          </main>
+        </div>
+      </div>
+      <footer>
+        <img id="adimage" src="images/ad1.PNG" alt="hey" />
+      </footer>
+      <div id="invisible">
+        <div id="menu">
+          <button id="menubutton1" class="menubutton">친구 추가</button>
+          <button id="menubutton2" class="menubutton">스콜피온톡 정보</button>
+          <button class="menubutton">로그아웃</button>
+          <button class="menubutton">종료</button>
+        </div>
+      </div>
+
+      <div id="outdiv">
+        <div id="addfriend" style="background-color: white">
+          <span id="addfriendtitle">
+            친구 추가
+            <button id="exitbutton">X</button>
+          </span>
+          <span id="searchtitle">ID 검색</span>
+          <div>
+            <form action="/searchfriend">
+              <span id="idsearchbox">
+                <i class="icon-search"></i>
+
+                <input
+                  type="text"
+                  name=""
+                  id="friendid"
+                  placeholder="아이디로 친구 찾기"
+                />
+              </span>
+              <input type="submit" value="" id="hiddensubmit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

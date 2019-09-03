@@ -1,0 +1,176 @@
+body {
+  margin-top: 22%;
+  background-color: #ffeb33;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  flex-direction: column;
+  /* flex-basis: 500px; */
+  /* flex */
+}
+
+.outerspan {
+  width: 102%;
+  height: 40px;
+  display: block;
+  /* vertical-align: middle; */
+  margin-top: 5%;
+  /* text-align: center; */
+  /* border: 1px solid gray; */
+  text-align: end;
+}
+
+.innerspan {
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #c2c2c2;
+  background: white;
+  vertical-align: middle;
+  margin-right: 15px;
+  text-align: left;
+}
+
+#lastspan {
+  margin-top: 20%;
+  text-align: center;
+  /* padding-left: 25px; */
+}
+
+#titlespan {
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.inputinfo {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  margin-top: 1px;
+  width: 90%;
+  height: 80%;
+  /* border: 1px solid red; */
+  border: none;
+}
+
+.inputinfo::placeholder {
+  color: #c2c2c2;
+  font-weight: 10;
+}
+
+.inputinfo:focus {
+  outline-width: 0;
+}
+
+#selectphone {
+  font-size: 1.2rem;
+  height: 40px;
+}
+
+#canclebtn,
+#submitbtn {
+  height: 40px;
+  width: 18ch;
+  margin-left: 5px;
+  border-radius: 2px;
+  color: white;
+  border: 1px solid gray;
+  background-color: #282c34;
+}
+
+.inputtel {
+  width: 70px;
+  height: 34px;
+  font-size: 1.5rem;
+  /* padding-top: 1px; */
+  /* text-align: center; */
+}
+
+#selectemail {
+  /* margin-top: 5px; */
+  /* padding-top:  */
+  font-size: 1.5rem;
+  height: 40px;
+  width: 150px;
+}
+
+.inputemail {
+  width: 100px;
+  border: none;
+  font-size: 1.5rem;
+  height: 38px;
+  padding-left: 1px;
+}
+
+.inputemail:focus {
+  outline-width: 0;
+}
+
+.inputemail::placeholder {
+  color: #c2c2c2;
+  font-weight: 10;
+}
+
+#inputmailaddr {
+  display: none;
+  width: 90px;
+  height: 38px;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  padding: 0;
+}
+
+#inputmailaddr:focus {
+  outline-width: 0;
+}
+
+#idcheck {
+  border-radius: 2px;
+  color: white;
+  border: 1px solid gray;
+  background-color: #282c34;
+}
+
+#inputid {
+  width: 70%;
+}
+
+#phonespan {
+  background-color: #ffeb33;
+  border: none;
+  /* text-align: end; */
+  display: inline-block;
+  /* padding-top: 10px; */
+}
+
+/* #alertid {
+  color: red;
+  font-size: 0.8rem;
+  margin-left: 20%;
+  display: none;
+} */
+
+.alert {
+  color: red;
+  font-size: 0.8rem;
+  margin-left: 15%;
+  display: none;
+  text-align: left;
+}
+
+#emailbutton {
+  border-radius: 2px;
+  color: white;
+  border: 1px solid gray;
+  background-color: #282c34;
+  width: 50px;
+  height: 40px;
+  display: none;
+  position: relative;
+  top: -11px;
+}

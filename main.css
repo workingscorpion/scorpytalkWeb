@@ -1,0 +1,309 @@
+body {
+  /* width: 100%;
+  height: 100vh; */
+  margin: 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.every {
+  width: 100%;
+  height: 100vh;
+  /* margin: 0; */
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 100%;
+  width: 13%;
+  background-color: #ececed;
+  display: inline-block;
+  margin: 0;
+}
+
+.icon {
+  margin-left: 2%;
+  font-size: 1.4rem;
+  display: block;
+  color: #b5b5b6;
+  /* margin-top: 10%; */
+  /* padding-top: 25%; */
+  margin-left: 30%;
+}
+
+.icon-user {
+  padding-top: 50%;
+  color: black;
+}
+
+.icon-smile {
+  padding-top: 30vh;
+}
+
+footer {
+  flex-basis: 20%;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+}
+
+#adimage {
+  width: 100%;
+  height: 100%;
+}
+
+.whole {
+  flex-basis: 79%;
+  display: flex;
+  z-index: 2;
+}
+
+.center {
+  margin-left: 25px;
+}
+
+#title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.icon-user-plus {
+  font-size: 1.4rem;
+  display: inline;
+  color: #b5b5b6;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 85%;
+  padding: 4px;
+}
+
+/* .icon-user-plus::before {
+  padding: 6px;
+} */
+
+.icon-user-plus:hover {
+  border: 1px solid #fcfcfc;
+  border-radius: 50%;
+  background-color: #fcfcfc;
+  padding: 4px;
+}
+
+.icon-user-plus:focus {
+  outline-width: 0;
+}
+
+.searchbar {
+  display: block;
+  border: 1px solid #ececed;
+  margin-top: 20px;
+  width: 380px;
+  height: 30px;
+  border-radius: 500px;
+  padding-top: 3px;
+  color: #c7c7c7;
+  background-color: #f9f9f9;
+  z-index: 0;
+}
+
+.icon-search {
+  padding-left: 10px;
+  color: #b5b5b6;
+}
+
+#inputsearch {
+  border: none;
+  /* font-size: 1.1rem; */
+  background-color: #f9f9f9;
+}
+
+#inputsearch::placeholder {
+  color: #c7c7c7;
+}
+
+#inputsearch:focus {
+  outline-width: 0;
+}
+
+.buttons {
+  border: none;
+  background-color: #ececed;
+  padding-top: 25%;
+  cursor: pointer;
+}
+
+.buttons:focus {
+  outline-width: 0;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 13%;
+  top: 25%;
+  border: 1px solid black;
+}
+
+.menubutton {
+  border: none;
+  background-color: white;
+  height: 30px;
+}
+
+#menubutton1,
+#menubutton2 {
+  border-bottom: 2px solid #ececed;
+}
+
+#invisible {
+  display: none;
+}
+
+#outdiv {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  top: 18%;
+}
+
+#exitbutton {
+  border: none;
+  background-color: #423630;
+  color: white;
+  position: absolute;
+  top: 3%;
+  left: 92%;
+}
+
+#addfriend {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid gray;
+  border-radius: 3px;
+}
+
+#addfriendtitle {
+  background-color: #423630;
+  color: white;
+  text-align: center;
+  height: 29px;
+  padding-top: 6px;
+  font-size: 0.9rem;
+}
+
+#searchtitle {
+  background-color: white;
+  border-bottom: 2px solid #423630;
+  text-align: center;
+  height: 29px;
+  padding-top: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#idsearchbox {
+  border: 1px solid #ececed;
+  border-radius: 3px;
+  height: 32px;
+  display: block;
+  margin: 13px;
+}
+
+#friendid {
+  width: 200px;
+  border: none;
+  margin-top: 8px;
+}
+
+#friendid:focus {
+  outline-width: 0;
+}
+
+main {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#myProfil {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+#myId {
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 17px;
+}
+
+#myImage {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 24px;
+}
+
+#friendsnumber {
+  height: 20px;
+  font-size: 0.7rem;
+  color: #b5b5b6;
+  display: block;
+  padding-top: 5px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.list:hover {
+  background-color: #f2f2f3;
+}
+
+.friendImage {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+}
+
+.friendId {
+  display: block;
+  height: 100%;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 15px;
+  /* padding-bottom: 15px; */
+  /* color: #7f7f7f   */
+}
+
+#hiddensubmit {
+  display: block;
+  border: none;
+  background-color: #423630;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 38%;
+}
+
+/* #outoutdiv {
+  background-color: rgba(0, 0, 0, 0.9);
+} */
+
+.icon-menu {
+  border: none;
+  background-color: white;
+}

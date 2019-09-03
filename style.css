@@ -1,0 +1,64 @@
+#chat-contents {
+  border: 1px solid gray;
+  height: 850px;
+  border-bottom: none;
+}
+#chat-input {
+  border: 1px solid gray;
+  height: 40px;
+}
+
+input {
+  /* border: none; */
+  border: 1px solid gray;
+  height: 25px;
+}
+
+#inputid {
+  border: 1px solid gray;
+  width: 100px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#inputtext {
+  width: 90%;
+  border: none;
+}
+
+button {
+  margin-top: 5px;
+  height: 30px;
+}
+
+#idspan {
+  /* position: absolute;
+  right: 50px;
+  top: 0; */
+  margin-left: 80%;
+}
+
+textarea {
+  width: 98%;
+  height: 98%;
+  border: none;
+  resize: none;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chatting</title>
+    <link rel="stylesheet" href="chatting.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/test_image.jpg" alt="" id="friendImage" />
+      <span id="friendId">test</span>
+    </header>
+    <main></main>
+    <footer>
+      <form action="/chat/file_update" method="post">
+        <span>
+          <input type="hidden" name="id" value="${id}" />
+          <input type="text" name="messege" id="inputtext" />
+          <input type="submit" value="전송" id="buttonsubmit" />
+        </span>
+      </form>
+    </footer>
+
+    <!-- <span id="idspan">ID : ${id}<span id="myID"></span></span>
+    <div id="chat-contents">
+      <textarea cols="30" rows="10" readonly>${data}</textarea>
+    </div>
+    <div id="chat-input">
+      <form action="/chat/file_update" method="post">
+        <span>
+          <input type="hidden" name="id" value="${id}" />
+          <input
+            type="text"
+            name="description"
+            id="inputtext"
+            placeholder="text"
+          />
+          <input type="submit" value="???" id="buttonsubmit" />
+        </span>
+      </form>
+    </div>
+     -->
+
+    <!-- <script src="chatting.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      $(function() {
+        var socket = io();
+        $("form").submit(function() {
+          socket.emit("chat message", "${id}" + " : " + $("#inputtext").val());
+          $("#inputtext").val("");
+          return false;
+        });
+        socket.on("chat message", function(msg) {
+          $("#messages").append($("<li>").text(msg));
+        });
+      });
+    </script>
+  </body>
+</html>
